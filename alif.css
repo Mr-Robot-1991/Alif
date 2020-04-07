@@ -1,0 +1,30 @@
+﻿*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+body{
+	background: #01FF82;
+	font-family: 'Tomorrow', sans-serif;
+	color:#01FF82;
+
+}
+.header{
+background: #fff;
+height: 800px;
+
+margin-top:100px;
+border-radius: 20px;
+padding: 30px;
+box-shadow: 5px 5px 10px;
+}
+a img{
+	max-width: 100px;
+	padding:10px; 
+}
+ .question{
+ 	margin-bottom: 15px;
+ 	padding: 10px;
+ 	border-bottom: 2px solid #01FF82;
+ 	border-radius: 20px;
+ }

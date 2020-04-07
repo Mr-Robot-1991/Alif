@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="vue.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="alif.css">
+	<link href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+	<div id ="app" >
+		<div class="container">
+			<div class="row">
+				<div class="col-6 offset-3">
+				  <div class="header">
+				  	   		   <a href=""><img src="icon-alif.svg"></a>
+			                   <h3 class="box_title">
+				                 Current tasks to accomplish
+			                   </h3>
+			            <div class="question">
+			                  <p> 1. Как вы подошли к планированию решения задачи ? <p>
+			                  <p v-if="show1"> <a href="https://html.com">HTLM</a> <a href="http://css.com/">CSS</a> <a href="http://javascript.com/">Javascript</a> и фреймворки (<a href="http://get.bootstrap.com/">Bootstap</a>, <a href="https://vuejs.org">Vuejs</a>) .</p>
+			                  <button v-on:click=" show1 =!show1 " type="button" class="btn-block btn btn-outline-success">Answer</button>
+			            </div> 
+			             <div class="question">
+			                  <p>2. Какие трудности у вас возникли по ходу выполнения задачи ? </p>
+			                  <p v-if="show2">Нехватки опыта работы .</p>
+			                  <button v-on:click=" show2 =!show2 " type="button" class="btn-block btn btn-outline-success">Answer</button>
+			            </div>
+			                <div class="question">
+			                  <p>3. Какими недостатками и какими достоинствами обладает ваше решение ?</p>
+			                  <p v-if="show3">Достоинство -  она проста и выглядит красиво .<br>
+			                                  Недостаток – не профессионально может.      </p>
+			                  <button v-on:click=" show3 =!show3" type="button" class="btn-block btn btn-outline-success">Answer</button>
+			            </div> 
+			                <div class="question">
+			                  <p>4. Что можно сделать, чтобы улучшить ваше решение.</p>
+			                  <p v-if="show4">Опыт работы на этом направление , учится , развивать навыки програмирования.</p>
+			                  <button v-on:click=" show4 =!show4 " type="button" class="btn-block btn btn-outline-success">Answer</button>
+			            </div>  
+		          </div>
+
+	            </div>		
+			</div>
+		</div>
+	
+	</div>
+
+
+<script>
+
+	 new Vue ({
+	 	el: '#app ',
+	 	data: {
+        show1: false,
+        show2:false,
+        show3:false,
+        show4:false
+      },
+      methods:{
+
+      }
+ })
+
+</script>
+</body>
+</html>
